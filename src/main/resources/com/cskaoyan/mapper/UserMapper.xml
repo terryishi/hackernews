@@ -19,4 +19,17 @@
         where id = #{userid}
     </select>
 
+    <select id="findByUserName" resultMap="base">
+        select
+        *
+        from user
+        where name = #{username}
+    </select>
+
+    <insert id="insertUser" parameterType="java.lang.String">
+        insert into user
+        (name,password)
+        values
+        (#{username},#{password})
+    </insert>
 </mapper>

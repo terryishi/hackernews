@@ -2,7 +2,7 @@ package com.cskaoyan.bean;
 
 import com.cskaoyan.vo.ViewObject;
 
-import java.sql.Date;
+import java.util.Date;
 
 public class News extends ViewObject {
 
@@ -12,7 +12,7 @@ public class News extends ViewObject {
     private String image;
     private int likeCount;
     private int commentCount;
-    private Date createdDate;
+    private java.util.Date createdDate;
     private int userId;
 
     @Override

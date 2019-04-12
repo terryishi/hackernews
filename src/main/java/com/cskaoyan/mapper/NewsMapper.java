@@ -10,4 +10,5 @@ public interface NewsMapper {
 
     List<News> findAllNews();
 
+    int insertNews(News news);
 }

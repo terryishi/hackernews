@@ -14,4 +14,5 @@ public interface NewsService {
     List<News> findAllNews();
 
 
+    int insertNews(String image, String title, String link, int id);
 }
